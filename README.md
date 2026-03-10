@@ -1,1 +1,43 @@
 # ModAutoADB-Lineageos17.1
+
+
+### HD mod AUTO ADB , lên nguồn , đen màn thanh toán
+## 1. Thay file adbd đã build sẵn -> system\system\apex\com.android.adbd\bin
+```
+https://drive.google.com
+```
+## Dành cho dòng Pixel
+```
+https://drive.google.com/
+```
+## 2. Mod lên nguồn : system\system\etc\init\hw\init.rc
+
+```
+on charger
+    setprop ro.bootmode "normal"
+    setprop sys.powerctl "reboot"
+    class_start charger
+```
+
+## 3. Mod TCP 555: system/system/build.prop
+thêm vào cuối prop
+
+```
+service.adb.tcp.port=5555
+ro.setupwizard.mode=DISABLED
+```
+## 4. system\system\etc\init\usbd.rc
+```
+service usbd /system/bin/usbd
+    class late_start
+    oneshot
+    user root
+    group root usb system
+
+
+on boot
+    setprop persist.sys.usb.config adb
+    start adbd
+```
+## 5. Dùng CRB mod xóa đen màn hình thanh toán
+
