@@ -4,7 +4,7 @@
 ### HD mod AUTO ADB , lên nguồn , đen màn thanh toán
 ## 1. Thay file adbd đã build sẵn -> system\system\apex\com.android.adbd\bin
 ```
-[https://drive.google.com](https://drive.google.com/file/d/18rieWM0YBtLSJ80g-59_6Hm020ROP16P/view?usp=sharing)](https://drive.google.com/file/d/18rieWM0YBtLSJ80g-59_6Hm020ROP16P/view?usp=sharing)
+https://drive.google.com/file/d/18rieWM0YBtLSJ80g-59_6Hm020ROP16P/view?usp=drive_link
 ```
 ## Dành cho dòng Pixel
 ```
